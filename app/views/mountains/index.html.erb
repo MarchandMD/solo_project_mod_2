@@ -6,7 +6,7 @@
   </tr>
   <% @mountains.each do |mt| %>
     <tr>
-      <td><%= mt.name %></td>
+      <td><%= link_to mt.name, "/mountains/#{mt.id}" %></td>
       <td><%= mt.created_at %></td>
     </tr>
   <% end %>
