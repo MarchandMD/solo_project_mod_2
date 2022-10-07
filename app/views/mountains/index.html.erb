@@ -1,0 +1,13 @@
+<h1>Mountains!</h1>
+<table>
+  <tr>
+    <th>Mountain Name</th>
+    <th>Created at</th>
+  </tr>
+  <% @mountains.each do |mt| %>
+    <tr>
+      <td><%= mt.name %></td>
+      <td><%= mt.created_at %></td>
+    </tr>
+  <% end %>
+</table>
