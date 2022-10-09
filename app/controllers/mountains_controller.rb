@@ -9,4 +9,10 @@ class MountainsController < ApplicationController
 
   def new
   end
+
+  def create
+    Mountain.create!(name: params[:name], handicap_accessible: params[:handicap_accessible])
+
+    redirect_to "/mountains"
+  end
 end
